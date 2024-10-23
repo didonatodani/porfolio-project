@@ -62,17 +62,35 @@ a:hover{
     #hamb-icon{
         display: block;
         width: 35px;
+        margin-bottom: 10px;
     }
 }
 
 #profile-pic{
     width: 150px;
     border-radius: 50%;
-    margin: 20px;
+    border: #22181C solid 1px;
+    margin: 10px;
+
 }
 
 .menu-items{
     display: none;
+    list-style-type: none;
+    gap: 30px;
+    
+}
+
+nav{
+    align-self: flex-start;
+    width: 100%;
+
+}
+.visible{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border-top: #22181C solid 1px;
 }
 
 
@@ -137,9 +155,7 @@ a:hover{
         }
         .menu-items{
             display: flex;
-            list-style-type: none;
             justify-content: space-evenly;
-            gap: 20px;
         }
     }
 }
