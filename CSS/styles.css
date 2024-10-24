@@ -37,6 +37,7 @@ body{
 
 h1, h2, h3, h4{
     font-family: "Karla", sans-serif;
+    text-align: center;
 }
 p, small, a, li{
     font-family: "Inconsolata", monospace;
@@ -124,7 +125,6 @@ nav{
             width: 35px;
             margin: 0 10px;
         }
-
     }
 
 /* ABOUT PAGE STYLES */
@@ -133,14 +133,29 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
+    background: linear-gradient(315deg, hsla(4, 84%, 49%, 1) 22%, hsla(37, 89%, 52%, 1) 100%);
     .about-img-div{
         #about-pic{
-            width: 300px;
+            max-width: 300px;
             border-radius: 5%;
         }
     }
     .about-text-div{
+        background-color: #E7E7E7;
+        max-height: 250px;
+        min-width: 300px;
+        max-width: 460px;
+        border-radius: 5%;
+        padding: 20px;
+        margin-top: 20px;
         text-align: center;
+        align-content: center;
+        overflow:scroll;
+        h2{
+            margin: 10px;
+            border-bottom: #22181C solid 1px;
+        }
     }
 }
 
@@ -156,6 +171,19 @@ nav{
         .menu-items{
             display: flex;
             justify-content: space-evenly;
+        }
+    }
+
+    .about-section{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        .about-text-div{
+            max-width: 400px;
+            text-align: left;
+            overflow: auto;
+            
         }
     }
 }
