@@ -7,21 +7,10 @@ font-family: "Karla", sans-serif;
 
 /* COLOR PALETTE:
 background-color: #E7E7E7;
-accent-color: #e62314;
-accent-color: #f19e18;
 color: #22181C;
 
 GRADIENT:
-
-background: hsla(4, 84%, 49%, 1);
-
-background: linear-gradient(315deg, hsla(4, 84%, 49%, 1) 22%, hsla(37, 89%, 52%, 1) 100%);
-
-background: -moz-linear-gradient(315deg, hsla(4, 84%, 49%, 1) 22%, hsla(37, 89%, 52%, 1) 100%);
-
-background: -webkit-linear-gradient(315deg, hsla(4, 84%, 49%, 1) 22%, hsla(37, 89%, 52%, 1) 100%);
-
-filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#e62314", endColorstr="#f19e18", GradientType=1 );*/
+background: linear-gradient(161deg, rgba(254,172,94,1) 9%, rgba(199,121,208,1) 62%, rgba(75,192,200,1) 100%);*/
 
 /* GENERAL STYLES MOBILE FIRST*/
 
@@ -49,7 +38,7 @@ a{
     text-decoration: none;
 }
 a:hover{
-    color: #e62314;
+    color: rgba(199,121,208,1);
 }
 
 /* HEADER STYLES */
@@ -100,7 +89,7 @@ nav{
 }
 
 section{
-    background: linear-gradient(315deg, hsla(4, 84%, 49%, 1) 22%, hsla(37, 89%, 52%, 1) 100%);
+    background: linear-gradient(161deg, rgba(254,172,94,1) 9%, rgba(199,121,208,1) 62%, rgba(75,192,200,1) 100%);
     height: 550px;
     display: flex;
 }
@@ -276,9 +265,13 @@ section{
     }
 
     .about-section {
+        padding: auto 70px;
         .about-text-div{
             max-width: 700px;
             border-radius: 10px;
+            h2{
+                text-align: left;
+            }
         }
         #about-pic{
             max-width: 600px;
@@ -289,3 +282,32 @@ section{
     }
 }
 
+
+
+/* 
+GRADIENT ANIMATIONNNN
+.css-selector {
+    background: linear-gradient(33deg, #51dfba, #dcdf51, #f29ef3, #9eb0f3);
+    background-size: 800% 800%;
+
+    -webkit-animation: gradientAnimation 43s ease infinite;
+    -moz-animation: gradientAnimation 43s ease infinite;
+    animation: gradientAnimation 43s ease infinite;
+}
+
+@-webkit-keyframes gradientAnimation {
+    0%{background-position:91% 0%}
+    50%{background-position:10% 100%}
+    100%{background-position:91% 0%}
+}
+@-moz-keyframes gradientAnimation {
+    0%{background-position:91% 0%}
+    50%{background-position:10% 100%}
+    100%{background-position:91% 0%}
+}
+@keyframes gradientAnimation {
+    0%{background-position:91% 0%}
+    50%{background-position:10% 100%}
+    100%{background-position:91% 0%}
+}
+     */
